@@ -35,7 +35,7 @@ export default class SongScreen extends Component {
   }
 
   youtTubeSearch() {
-    const searchTerm = decodeURIComponent(this.props.match.params.artist) + " " + decodeURIComponent(this.props.match.params.song_name) + ' -full -trailer';
+    const searchTerm = decodeURIComponent(this.props.match.params.artist) + " " + decodeURIComponent(this.props.match.params.song_name);
 
     YTSearch({ key: settings.YTSearchKey, term: searchTerm }, videos => {
       if (videos.length === 0) {
