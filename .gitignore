@@ -1,4 +1,5 @@
-src/settings/index.js
+#src/settings/index.js
 dist/
+not_for_repo
 node_modules
 .vscode
