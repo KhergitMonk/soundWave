@@ -82,7 +82,7 @@ export default class TrackInfo extends Component {
           <div className="clearfix">
             <h5 className="mt-0 float-left">{trackInfo.name}</h5>
             <div className="float-right" style={{marginTop: '-5px'}}>
-              <Fav favType='Song' artistName={trackInfo.artist.name} songName={trackInfo.name} albumName={trackInfo.album.title}  />
+              <Fav favType='Song' artistName={trackInfo.artist.name} songName={trackInfo.name} albumName={trackInfo.album ? trackInfo.album.title : ''}  />
             </div>
           </div>
           <table className="table">

@@ -3,6 +3,8 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = (env) => {
 
+  if (!env) env = {};
+
   return {
     module: {
       rules: [

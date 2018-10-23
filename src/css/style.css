@@ -132,6 +132,11 @@ hr {
   margin-top: 4px;
 }
 
+.list-group-item.active {
+  background-color: #eee;
+  border-color: #eee;
+}
+
 .nav-link {
   cursor: pointer;
   padding: .2rem 1rem;
